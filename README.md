@@ -24,6 +24,7 @@ sudo yum install git -y
 
 **Clone repository**
 ![Uploading image.png…]()
+
 **Redirect port 80 to 8081**
 
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8081
