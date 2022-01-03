@@ -19,7 +19,6 @@ sudo apt-get install -y nodejs
 sudo apt-get install git
 
 **Clone repository**
-![Uploading image.png…]()
 
 **Redirect port 80 to 8081**
 
@@ -42,3 +41,38 @@ pm2 start app.js
 **Automatically run PM2 when the server restarts**
 
 sudo pm2 startup
+
+**install nginx**
+sudo apt-get install -y nginx
+
+cd /etc/nginx/sites-available/
+
+sudo touch react.conf
+
+sudo nano react.conf 
+
+![image](https://user-images.githubusercontent.com/57895489/147944970-84b7a393-bf4a-4c24-9bb7-9344bf317f5a.png)
+
+server {
+    listen 80;
+    server_name ec2-13-55-206-113.ap-southeast-2.compute.amazonaws.com;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/apis/app.sock;
+    }
+}
+
+sudo ln react.conf /etc/nginx/sites-enabled/
+
+sudo nano /etc/nginx/nginx.conf
+#server_names_hash_bucket_size  256;
+![image](https://user-images.githubusercontent.com/57895489/147945329-f1877762-31ba-4620-85ca-dd17d52cd36e.png)sudo nginx -t
+
+sudo service nginx restart
+
+# Then you can go to check your web
+![Uploading image.png…]()
+# Then you can go to check your web
+
+
