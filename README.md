@@ -19,15 +19,24 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 **Install node**
 ![image](https://user-images.githubusercontent.com/57895489/147892929-62cd3d38-13c2-4f41-9cc9-4bf83bce1091.png)
 **Install git**
+
 sudo yum install git -y
+
 **Clone repository**
 ![Uploading image.png…]()
 **Redirect port 80 to 8081**
+
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8081
+
 **Run server on ec2**
+
 npm install
+
 node app
 **Keep App running using pm2**
+
 npm install pm2 -g
+
 pm2 start app.js
+
 **Automatically run PM2 when the server restarts**
