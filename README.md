@@ -8,14 +8,11 @@ No need to change default settings. Skip to step 6
 # 2. set up ec2
 **connect to ec2 instance on terminal**
 ![image](https://user-images.githubusercontent.com/57895489/147892743-6ef016b0-0703-4c90-bed4-55aa040cd0b4.png)
-**run: sudo yum update -y**
-![image](https://user-images.githubusercontent.com/57895489/147892776-8df33ea3-052d-42f3-85fb-a79be4dbb65c.png)
-**use curl to install nvm**
+**Install nodejs**
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-**exit and reopen ec2 instance to check nvm install**
-![image](https://user-images.githubusercontent.com/57895489/147892892-d673e4e3-a75f-4513-95ed-7c201f70f1ad.png)
 **Install node**
 ![image](https://user-images.githubusercontent.com/57895489/147892929-62cd3d38-13c2-4f41-9cc9-4bf83bce1091.png)
 **Install git**
