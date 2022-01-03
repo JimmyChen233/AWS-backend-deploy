@@ -56,7 +56,6 @@ sudo nano react.conf
 server {
     listen 80;
     server_name ec2-13-55-206-113.ap-southeast-2.compute.amazonaws.com;
-
     location / {
         include proxy_params;
         proxy_pass http://unix:/home/ubuntu/apis/app.sock;
