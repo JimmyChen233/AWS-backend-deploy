@@ -11,7 +11,9 @@ No need to change default settings. Skip to step 6
 **run: sudo yum update -y**
 ![image](https://user-images.githubusercontent.com/57895489/147892776-8df33ea3-052d-42f3-85fb-a79be4dbb65c.png)
 **use curl to install nvm**
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
 **exit and reopen ec2 instance to check nvm install**
 ![image](https://user-images.githubusercontent.com/57895489/147892892-d673e4e3-a75f-4513-95ed-7c201f70f1ad.png)
 **Install node**
