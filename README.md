@@ -73,7 +73,6 @@ sudo nano /etc/nginx/nginx.conf
 sudo service nginx restart
 ```
 # Then you can go to check your web
-![Uploading image.png…]()
-# Then you can go to check your web
+
 
 
