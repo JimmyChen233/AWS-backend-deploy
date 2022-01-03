@@ -9,15 +9,14 @@ No need to change default settings. Skip to step 6
 **connect to ec2 instance on terminal**
 ![image](https://user-images.githubusercontent.com/57895489/147892743-6ef016b0-0703-4c90-bed4-55aa040cd0b4.png)
 **Install nodejs**
+
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
 sudo apt-get install -y nodejs
 
-
-**Install node**
-![image](https://user-images.githubusercontent.com/57895489/147892929-62cd3d38-13c2-4f41-9cc9-4bf83bce1091.png)
 **Install git**
 
-sudo yum install git -y
+sudo apt-get install git
 
 **Clone repository**
 ![Uploading image.png…]()
@@ -28,13 +27,18 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8081
 
 **Run server on ec2**
 
+cd apis
+
 npm install
 
 node app
+
 **Keep App running using pm2**
 
-npm install pm2 -g
+sudo npm install pm2 -g
 
 pm2 start app.js
 
 **Automatically run PM2 when the server restarts**
+
+sudo pm2 startup
