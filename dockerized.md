@@ -61,3 +61,4 @@ docker push 325660384969.dkr.ecr.ap-southeast-2.amazonaws.com/bypassj2-backend
 **Now the latest built image is in your repository**
 ![image](https://user-images.githubusercontent.com/57895489/148270053-bcfb0dc2-dfc9-42f7-a1ba-2e6485804c1a.png)
 
+
