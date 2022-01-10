@@ -126,6 +126,15 @@ create target group
 
 ![image](https://user-images.githubusercontent.com/57895489/148794453-f3d8f450-416f-4535-8c14-41387d001602.png)
 
+![image](https://user-images.githubusercontent.com/57895489/148795935-edc6729c-8908-4b3e-8b1a-c5158d511510.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148795998-a0ac6115-d925-46da-88f7-154cc3e0f87e.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148796216-637c51e8-869a-4624-8047-717f0a9ee659.png)
+
+then create load balancer
+
+
 
 
 
