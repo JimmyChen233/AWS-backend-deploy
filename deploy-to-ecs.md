@@ -108,8 +108,23 @@ choose application load balancer
 
 ![image](https://user-images.githubusercontent.com/57895489/148793238-4a2eec6d-2397-4b3a-ab87-f8638efe6d85.png)
 
+create new security group
 
+![image](https://user-images.githubusercontent.com/57895489/148793480-49b55edf-058b-425b-82ae-c0f81a94a687.png)
 
+![image](https://user-images.githubusercontent.com/57895489/148793746-7fbaf4bb-e723-43e4-bf02-8188948b7240.png)
+
+add inbound rules
+
+![image](https://user-images.githubusercontent.com/57895489/148794046-5569a527-598a-423e-94ba-ba169ed3929f.png)
+
+then create
+
+![image](https://user-images.githubusercontent.com/57895489/148794305-822b6871-f984-4bd4-ac45-614a28f107c9.png)
+
+create target group
+
+![image](https://user-images.githubusercontent.com/57895489/148794453-f3d8f450-416f-4535-8c14-41387d001602.png)
 
 
 
