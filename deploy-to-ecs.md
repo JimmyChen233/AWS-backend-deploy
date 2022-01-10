@@ -1,5 +1,3 @@
-![image](https://user-images.githubusercontent.com/57895489/148780221-e953d0e3-1079-4305-87b4-292e71b5c093.png)
-
 # Set up networks 
 
 **Create a VPC**
@@ -64,4 +62,55 @@ Edit subnet association
 ![image](https://user-images.githubusercontent.com/57895489/148783986-a5d5fca8-d9c8-434e-84ae-343d6275c958.png)
 
 ![image](https://user-images.githubusercontent.com/57895489/148784079-aed349da-9a1a-41e5-907f-1668eaccfc61.png)
+
+
+# ECS Cluster
+
+![image](https://user-images.githubusercontent.com/57895489/148789442-ba499264-23eb-46fb-934d-5727dc8e6e6a.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148789522-e0e42541-a9a2-4632-8b33-768b1c390a36.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148790092-12fd55b8-6ab5-4753-8074-cbfa78bcf8d2.png)
+
+**Create task definition**
+
+![image](https://user-images.githubusercontent.com/57895489/148790253-2d068af3-5860-4fb8-b898-626285ee14b1.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148790316-bc21221c-fbb7-4b79-96c1-4449d40d71cd.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148791359-9a71e700-dea9-472b-9224-3f101aea056c.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148791617-ebd7355c-4c05-4730-a246-481dee9decd3.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148791723-e47ea743-6cd4-4b06-bb94-948b16fd5479.png)
+
+**Create Service**
+
+![image](https://user-images.githubusercontent.com/57895489/148791863-455ee5d8-2aa9-4189-b760-5f08d212e305.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148791924-e77847e3-9c4a-4aea-8003-b0c2746cd9a9.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148792208-b22fa061-218b-462b-ab49-a8861c14d178.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148792552-aee02cf5-9023-4b73-a233-e5c9b76f1d6d.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148792647-4ab3c01e-f2e1-4870-bc65-443b5bf82169.png)
+
+Then go to create a load balancer
+
+![image](https://user-images.githubusercontent.com/57895489/148792789-e3c12df8-fd47-4aaa-b818-114ce415db83.png)
+
+choose application load balancer
+
+![image](https://user-images.githubusercontent.com/57895489/148792874-42614407-423e-4a1b-95bb-c8b840859872.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148793169-9806adac-49b0-49bd-aebe-036d49fa3078.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148793238-4a2eec6d-2397-4b3a-ab87-f8638efe6d85.png)
+
+
+
+
+
+
 
