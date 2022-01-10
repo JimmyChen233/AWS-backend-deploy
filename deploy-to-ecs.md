@@ -21,7 +21,7 @@ The subnets should look like this:
 
 ![image](https://user-images.githubusercontent.com/57895489/148781044-a5b9a400-3ccb-460b-bab3-90a71a0797f2.png)
 
-**Create an internet gateway**
+**Create internet gateways**
 
 To make public subnets actually public, we need to attach an internet gateway.
 
@@ -37,7 +37,6 @@ Then we attach it to vpc
 
 ![image](https://user-images.githubusercontent.com/57895489/148782282-8196f489-4aaa-4b05-a5a5-2a1fc54daabc.png)
 
-![image](https://user-images.githubusercontent.com/57895489/148781944-9c8a1151-dcd8-4242-97d5-0f905c65a39a.png)
 
 Then we create a route table and attach it to public subnets.
 
@@ -45,7 +44,24 @@ Then we create a route table and attach it to public subnets.
 
 ![image](https://user-images.githubusercontent.com/57895489/148782893-351b8603-0b59-42a1-8129-ffbeff717c30.png)
 
+Edit subnet association
+
+![image](https://user-images.githubusercontent.com/57895489/148784334-9b3b76f5-c6de-4a88-b679-5b359e6483fc.png)
+
+Now this route table has only local route, and we want to add route that points to internet gateways.
+
+![image](https://user-images.githubusercontent.com/57895489/148783360-0b9c2b20-aa99-4302-a438-c7c7c261b40b.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148783575-baf5b6cf-c366-435b-82d3-8f510f31c342.png)
+
+Then we create a route table for private subnets
+
+![image](https://user-images.githubusercontent.com/57895489/148783857-984a88dc-f141-4f8b-8c99-819e8a681007.png)
 
 
-![Uploading image.png…]()
+Edit subnet association
+
+![image](https://user-images.githubusercontent.com/57895489/148783986-a5d5fca8-d9c8-434e-84ae-343d6275c958.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148784079-aed349da-9a1a-41e5-907f-1668eaccfc61.png)
 
