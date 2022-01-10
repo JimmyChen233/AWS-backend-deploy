@@ -134,6 +134,14 @@ create target group
 
 then create load balancer
 
+**Go back to ECS page**
+
+add to load balancer
+
+![image](https://user-images.githubusercontent.com/57895489/148797073-4dc17e49-534b-4fc5-ad49-c780752fc147.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148798777-13e90f26-e91f-4feb-95f3-1ca28b1787e2.png)
+
 
 
 
