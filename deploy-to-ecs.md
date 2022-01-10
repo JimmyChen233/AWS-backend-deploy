@@ -37,10 +37,15 @@ Then we attach it to vpc
 
 ![image](https://user-images.githubusercontent.com/57895489/148782282-8196f489-4aaa-4b05-a5a5-2a1fc54daabc.png)
 
+![image](https://user-images.githubusercontent.com/57895489/148781944-9c8a1151-dcd8-4242-97d5-0f905c65a39a.png)
+
 Then we create a route table and attach it to public subnets.
 
 ![image](https://user-images.githubusercontent.com/57895489/148782822-07d61999-6bfe-4ef6-87f1-bda3ed92316f.png)
 
 ![image](https://user-images.githubusercontent.com/57895489/148782893-351b8603-0b59-42a1-8129-ffbeff717c30.png)
 
-![image](https://user-images.githubusercontent.com/57895489/148781944-9c8a1151-dcd8-4242-97d5-0f905c65a39a.png)
+
+
+![Uploading image.png…]()
+
