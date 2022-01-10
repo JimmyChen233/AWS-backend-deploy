@@ -142,6 +142,61 @@ add to load balancer
 
 ![image](https://user-images.githubusercontent.com/57895489/148798777-13e90f26-e91f-4feb-95f3-1ca28b1787e2.png)
 
+unselect service discovery, then next step, next step, and create.
+
+![image](https://user-images.githubusercontent.com/57895489/148799690-468bb295-bbe4-4f61-ae36-be8a638968c5.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148799744-41948741-0112-43e9-8155-7fbf92af7782.png)
+
+This is because in our task, we need to run npm install, but the private subnet has no internet accessibility.
+We don't want to have our tasks in a public subnet that everybody  can access, so we have to add a NAT gateway to our subnet.
+
+![image](https://user-images.githubusercontent.com/57895489/148800532-7e39a5c8-aa07-4c49-a5c6-f4bd733f4704.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148801077-a2b76523-b2f1-4fcd-ab16-946853d28559.png)
+
+then create
+
+**change private route**
+
+Go to route tables, select our private route, and edit routes
+
+![image](https://user-images.githubusercontent.com/57895489/148802222-04b0c2c3-d5ec-41a1-9e3e-b0774ffbbe06.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148802561-80d3c15c-6255-4e48-b1ca-51b935a82c69.png)
+
+and save changes.
+
+Remember that we have allocated a security group to this service. We have to make sure that security group has an inbound rule from thwe security group attached to the elastic load balancer. At the moment we only setup the HTTP access from anywhere but thats not enough. 
+
+Update sercive.
+
+![image](https://user-images.githubusercontent.com/57895489/148803661-fb1b36d3-8d43-4977-9844-d299221d5a32.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148804146-bcfaa97b-7f64-4d1a-9fc5-8bd4a8091184.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148804189-49551fd7-a785-4c1a-a5a0-1a2bd90f8e07.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148804673-af541f20-ade3-4929-bfe2-e7faf4598801.png)
+the source  security group is myalbsg
+![image](https://user-images.githubusercontent.com/57895489/148804804-07295a7b-70f9-46ca-9130-743d0dbaf5be.png)
+the save rules.
+
+**Go back to load balancer**
+
+click listeners
+
+![image](https://user-images.githubusercontent.com/57895489/148806017-317d0467-8c7a-4c60-b73c-05c81af1a0ab.png)
+
+check targets
+
+![image](https://user-images.githubusercontent.com/57895489/148806111-1fd69bc1-dcc8-4027-95f3-1fbcf74cf676.png)
+
+Now they are all healthy. Lets go to load balancer again. Copy DNS name.
+
+![image](https://user-images.githubusercontent.com/57895489/148806314-b45bca60-1488-456a-8f7b-477ce49d842b.png)
+
+![image](https://user-images.githubusercontent.com/57895489/148806458-c25d2942-773b-4f07-b358-1f4f9e5fb2d8.png)
 
 
 
